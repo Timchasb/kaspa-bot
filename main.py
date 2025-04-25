@@ -5,10 +5,12 @@ import hashlib
 import json
 import math
 from datetime import datetime
+import os
 
 # Параметры бота
-API_KEY = 'YOUR_API_KEY'
-API_SECRET = 'YOUR_API_SECRET'
+
+API_KEY = os.getenv('API_KEY')
+API_SECRET = os.getenv('API_SECRET')
 SYMBOL = 'KASUSDT'
 LEVERAGE = 10
 TRADE_SIZE_PERCENT = 70
